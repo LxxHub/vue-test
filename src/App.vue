@@ -1,19 +1,25 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+    <todo-list></todo-list>
   </div>
 </template>
 
+<script>
+import TodoList from './containers/TodoList/TodoList.vue'
+export default {
+  components: {
+    TodoList
+  }
+}
+</script>
+
 <style lang="stylus">
-#app
-  font-family Avenir, Helvetica, Arial, sans-serif
-  -webkit-font-smoothing antialiased
-  -moz-osx-font-smoothing grayscale
-  text-align center
-  color #2c3e50
-  margin-top 60px
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #cdcdcd;
+}
 </style>

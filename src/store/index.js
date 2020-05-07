@@ -5,8 +5,12 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
+    inputValueX: ''
   },
   mutations: {
+    changeInputValueX (state, payload) {
+      state.inputValueX = payload
+    }
   },
   actions: {
   },
